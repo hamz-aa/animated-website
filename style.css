@@ -30,6 +30,7 @@ body {
 #nav a {
   color: black;
   text-decoration: none;
+  display: inline-block;
 }
 
 #nLeft {
@@ -197,6 +198,136 @@ body {
   padding: 3vw;
   padding-left: 14vw;
   padding-right: 12vw;
+  margin-top: 8vw;
+  display: flex;
+  justify-content: space-between;
 }
 
-#first-pic
+#first-pic {
+  width: 17vw;
+}
+
+#second-pic {
+  width: 25vw;
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  align-items: flex-end;
+}
+
+#first-pic #pic-image {
+  width: 100%;
+  height: 22vw;
+  margin-bottom: 1vw;
+}
+
+#second-pic #pic-image {
+  width: 100%;
+  height: 37vw;
+  margin-bottom: 1vw;
+}
+
+#pictures h1 {
+  letter-spacing: -0.1vw;
+  font-weight: 100;
+  font-size: 2vw;
+}
+
+#pictures p {
+  font-size: 1vw;
+  letter-spacing: -0.07vw;
+  opacity: 0.8;
+  margin-top: 10px;
+}
+
+#pic-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#second-pic p {
+  width: 50%;
+}
+
+#banner {
+  width: 100%;
+  margin-top: 8vw;
+  display: flex;
+  align-items: center;
+}
+
+#b-img {
+  width: 65%;
+  height: 60vh;
+}
+
+#b-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 0% 68%;
+}
+
+#b-text {
+  width: 35%;
+  padding: 0 3vw;
+}
+
+#b-text h1 {
+  font-size: 2.8vw;
+  line-height: 1;
+  font-weight: 400;
+  letter-spacing: -0.15vw;
+}
+
+#b-text p {
+  margin-top: 20px;
+  width: 60%;
+  font-size: 1vw;
+}
+
+#future {
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+}
+
+#future video {
+  width: 100%;
+  opacity: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#f-text {
+  position: relative;
+  z-index: 9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  padding: 1vw 2vw;
+  border-radius: 10px;
+}
+
+#f-text button {
+  padding: 0.8vw 1.7vw;
+  font-size: 0.8vw;
+  cursor: pointer;
+  text-transform: capitalize;
+  margin-top: 10px;
+  font-weight: 700;
+  border-radius: 100px;
+  background-color: #fff;
+  border: 1px solid #c6c6c6;
+  color: #6f6f6f;
+}

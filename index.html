@@ -3,11 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@3.6.0/fonts/remixicon.css"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
     <title>Animated Website</title>
   </head>
   <body>
@@ -15,17 +21,17 @@
       <div class="home">
         <div id="nav">
           <div id="nLeft">
-            <a href="#">Home</a>
-            <a href="#">Pricing</a>
-            <a href="#">Products</a>
+            <a class="nLink" href="#">Home</a>
+            <a class="nLink" href="#">Pricing</a>
+            <a class="nLink" href="#">Products</a>
           </div>
-          <a href="#" id="center-a-tag">Hamza</a>
+          <a class="nLink" href="#" id="center-a-tag">Hamza</a>
           <div id="nRight">
-            <a href="#">Our Journey</a>
+            <a class="nLink" href="#">Our Journey</a>
           </div>
         </div>
         <div id="hero">
-          <div id="sustain">
+          <div class="animation-2" id="sustain">
             <h5>01.</h5>
             <h2>Sustainability</h2>
             <p>
@@ -35,7 +41,7 @@
               <img src="./images/pinkgreenplant.jpg" alt="" />
             </div>
           </div>
-          <div id="ephemeral">
+          <div class="animation-2" id="ephemeral">
             <div id="headings">
               <h1>Ephemeral</h1>
               <h1>Equilibrium.</h1>
@@ -48,32 +54,90 @@
               </p>
             </div>
           </div>
-          <div id="visit">
+          <div class="animation-2" id="visit">
             <div id="circle-v">
               <i class="ri-arrow-down-line"></i>
             </div>
             <h3>visit our gallery.</h3>
           </div>
         </div>
-        <div id="motive">
-          <h3>Our Motive</h3>
-          <p>
-            We are deeply committed to sustainability. We believe in a greener,
-            more sustainable future, <span id="span-1"></span> and it's at the
-            core of everything we do. Our practices are designed with
-            environmental <span id="span-2"></span> responsibility in mind, from
-            sustaining eco-friendly <span id="span-3"></span> materials to
-            reducing our carbon footprint.
-          </p>
-        </div>
-        <div id="pictures"></div>
+      </div>
+      <div id="motive">
+        <h3>Our Motive</h3>
+        <p>
+          We are deeply committed to sustainability. We believe in a greener,
+          more sustainable future, <span id="span-1"></span> and it's at the
+          core of everything we do. Our practices are designed with
+          environmental <span id="span-2"></span> responsibility in mind, from
+          sustaining eco-friendly <span id="span-3"></span> materials to
+          reducing our carbon footprint.
+        </p>
+      </div>
+      <div id="pictures">
         <div id="first-pic">
           <div id="pic-image">
-            <h1>Synergy.</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            <img src="./images/sea.jpg" alt="" />
           </div>
+          <h1>Synergy.</h1>
+          <p>
+            Committed to Sustainability, Eco-Friendly Choices for a Better
+            Tomorrow.
+          </p>
+        </div>
+        <div id="second-pic">
+          <div id="pic-image">
+            <img src="./images/cloud.jpg" alt="" />
+          </div>
+          <h1>Harmony.</h1>
+          <p>
+            Committed to Sustainability, Eco-Friendly Choices for a Better
+            Tomorrow.
+          </p>
+        </div>
+      </div>
+      <div id="banner">
+        <div id="b-img">
+          <img src="./images/bottle.jpg" alt="" />
+        </div>
+        <div id="b-text">
+          <h1>Biodegradable</h1>
+          <h1>Packaging.</h1>
+          <p>
+            Committed to Sustainability and Eco-Friendly Choices for a Better
+            Tomorrow.
+          </p>
+        </div>
+      </div>
+      <div id="future">
+        <video src="./images/back.mp4" autoplay muted loop></video>
+        <div id="f-text">
+          <h1>think of future</h1>
+          <button>Join the Movement</button>
         </div>
       </div>
     </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js"
+      integrity="sha512-7Au1ULjlT8PP1Ygs6mDZh9NuQD0A5prSrAUiPHMXpU6g3UMd8qesVnhug5X4RoDr35x5upNpx0A6Sisz1LSTXA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- Scroll Trigger is needed for Scroll Effects -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <!-- Three.js is needed for 3d Effects -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
+
+    <!-- ControlKit is needed for Debug Panel -->
+    <script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script>
+
+    <script
+      type="text/javascript"
+      src="https://unpkg.com/sheryjs/dist/Shery.js"
+    ></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
   </body>
 </html>
