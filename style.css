@@ -75,13 +75,9 @@ body {
 }
 
 #sus-image-wrapper img {
-  width: 140%;
-  height: 140%;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 
 #ephemeral {
@@ -266,7 +262,7 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: 0% 68%;
+  object-position: 0% 70%;
 }
 
 #b-text {
@@ -301,7 +297,7 @@ body {
 
 #future video {
   width: 100%;
-  opacity: 1;
+  opacity: 0;
   position: absolute;
   top: 50%;
   left: 50%;
